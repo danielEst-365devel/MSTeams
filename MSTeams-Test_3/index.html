@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+    <!-- Include the Teams SDK -->
+    <script src="https://statics.teams.microsoft.com/sdk/v1.8.0/js/MicrosoftTeams.min.js"></script>
+    <!-- Include your personal tab script -->
+    <script src="personal-tab.js"></script>
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <div id="taskList">
+        <!-- Task list will be displayed here -->
+    </div>
+
+    <script>
+        // Execute your personal tab script here after the SDK is loaded
+        microsoftTeams.initialize();
+
+        // Function to fetch and display tasks
+        function displayTasks() {
+            // Fetch tasks from your backend API or database
+            // Populate the taskList element with task data
+        }
+
+        // Call displayTasks when the page loads
+        displayTasks();
+    </script>
+</body>
+</html>
